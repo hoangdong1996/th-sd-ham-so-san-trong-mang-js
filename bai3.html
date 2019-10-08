@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển chữ thường thành chữ in hoa</title>
+</head>
+<body>
+<script>
+    let str = window.prompt("Nhập chuỗi: ");
+    function check_Upper_and_Lower() {
+        let character = str.toString();
+        alert(character.join(" "));
+        let arr = [];
+        for (let i = 0; i < str.length; i++) {
+            if (character[i] === character[i].toUpperCase()) {
+                arr.push(character[i].toLowerCase());
+            } else if (character[i] === character[i].toLowerCase()) {
+                arr.push(character[i].toUpperCase());
+            } else {
+                arr.push(character[i]);
+            }
+        }
+        alert(arr.join(" "));
+    }
+    check_Upper_and_Lower();
+</script>
+</body>
+</html>
